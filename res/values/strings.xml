@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JSketch</string>
+    <string name="DEBUG_MVC_ID">CS349_DEBUG_JSKETCH</string>
+</resources>

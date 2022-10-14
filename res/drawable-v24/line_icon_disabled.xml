@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <rotate
+            android:fromDegrees="135"
+            android:toDegrees="135"
+            >
+            <shape
+                android:shape="line" >
+                <stroke
+                    android:width="2dp"
+                    android:color="@color/iconDisabled"
+                    />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

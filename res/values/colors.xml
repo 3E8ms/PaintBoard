@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!-- My colors -->
+    <color name="toolBarBg">#dbdbdb</color>
+    <color name="toolBtnSelected">#a0a0a0</color>
+    <color name="toolBarBorder">@android:color/black</color>
+    <color name="eraseIcon">@android:color/holo_red_dark</color>
+    <color name="iconDisabled">#efefef</color>
+    <color name="myCanvasBg">@android:color/white</color>
+    <color name="myColor1">@android:color/holo_red_dark</color>
+    <color name="myColor2">@android:color/holo_green_dark</color>
+    <color name="myColor3">@android:color/holo_blue_dark</color>
+    <color name="myColor4">@android:color/holo_orange_dark</color>
+    <color name="border">#663300</color>
+</resources>

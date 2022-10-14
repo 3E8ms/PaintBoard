@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/toolBarBg"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <ImageButton
+                    android:id="@+id/selectBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:src="@drawable/select_icon" />
+
+                <ImageButton
+                    android:id="@+id/eraseBtn"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:src="@drawable/erase_icon_disabled" />
+
+
+                <ImageButton
+                    android:id="@+id/rectBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:src="@drawable/rect_icon" />
+
+                <ImageButton
+                    android:id="@+id/circleBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/circle_icon" />
+
+                <ImageButton
+                    android:id="@+id/lineBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/line_icon" />
+
+                <LinearLayout
+                    android:id="@+id/colorPalette"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/colorBtn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:background="@color/myColor1"
+                        android:padding="0dp"
+                        android:src="@android:color/transparent" />
+
+                    <ImageButton
+                        android:id="@+id/colorBtn2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:background="@color/myColor2"
+                        android:padding="0dp"
+                        android:src="@android:color/transparent" />
+
+                    <ImageButton
+                        android:id="@+id/colorBtn3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:background="@color/myColor3"
+                        android:padding="0dp"
+                        android:src="@android:color/transparent" />
+
+                    <ImageButton
+                        android:id="@+id/colorBtn4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="0dp"
+                        android:background="@color/myColor4"
+                        android:padding="0dp"
+                        android:src="@android:color/transparent" />
+
+                </LinearLayout>
+                <!-- add more buttons HERE -->
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/toolbar_right_border"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/toolBarBorder" />
+
+        <net.codebot.jsketch.MyCanvas
+            android:id="@+id/canvas"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/myCanvasBg"
+            android:clickable="true" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
